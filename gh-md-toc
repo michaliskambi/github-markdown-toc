@@ -111,6 +111,7 @@ fi
 #
 gh_toc_grab() {
     # find strings that corresponds to template
+    #'<h[1-6]>\s*<a\s*id="user-content-[^"]*"\s*class="anchor"\s*href="[^"]*"[^>]*>\s*<span[^<*]*</span>\s*</a>.*?\s*</h' | \
     $GH_GREP \
     '<h[1-6]>\s*<a\s*id="user-content-[^"]*"\s*class="anchor"\s*href="[^"]*"[^>]*>.*?</a>.*?\s*</h' | \
     # replace all new lines except last one
